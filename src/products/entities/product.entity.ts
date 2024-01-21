@@ -64,7 +64,7 @@ export class Product {
   @OneToMany(() => ProductImage, (productImage) => productImage.product, {
     cascade: true,
   }) //Un producto puede tener muchas imagenes
-  images?: ProductImage;
+  images?: ProductImage[];
 
   @BeforeInsert()
   checkSlugInsert() {
