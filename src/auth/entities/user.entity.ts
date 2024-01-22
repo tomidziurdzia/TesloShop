@@ -23,6 +23,7 @@ export class User {
 
   @Column({
     type: 'bool',
+    default: true,
   })
   isActive: boolean;
 
